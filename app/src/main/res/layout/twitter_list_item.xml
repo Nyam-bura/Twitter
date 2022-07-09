@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    android:layout_margin="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/ivperson"
+            android:layout_width="61dp"
+            android:layout_height="84dp"
+            android:layout_marginStart="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/janie" />
+
+        <TextView
+            android:id="@+id/tvHandle"
+            android:layout_width="121dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="20dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toStartOf="@+id/tvName"
+            app:layout_constraintStart_toEndOf="@+id/ivperson"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Ujanita.21Jul" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="179dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="148dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivperson"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Jane Ndung'u" />
+
+        <TextView
+            android:id="@+id/tvTweet"
+            android:layout_width="390dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.771"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvName"
+            tools:text="You can use post planners content streams to find pre-made quote tweets" />
+
+        <ImageView
+            android:id="@+id/ivreply"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvnum1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_maps_ugc_24" />
+
+        <ImageView
+            android:id="@+id/ivRetweet"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvnum2"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_transform_24" />
+
+        <ImageView
+            android:id="@+id/ivLikes"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toStartOf="@+id/tvnum3"
+            app:layout_constraintStart_toEndOf="@+id/ivRetweet"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_favorite_border_24" />
+
+        <ImageView
+            android:id="@+id/ivshare"
+            android:layout_width="55dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="6dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/ivLikes"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:srcCompat="@drawable/ic_baseline_share_24" />
+
+        <TextView
+            android:id="@+id/tvnum1"
+            android:layout_width="21dp"
+            android:layout_height="32dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivRetweet"
+            app:layout_constraintStart_toEndOf="@+id/ivreply"
+            app:layout_constraintTop_toBottomOf="@+id/ivperson"
+            app:layout_constraintVertical_bias="0.844"
+            tools:text="50" />
+
+        <TextView
+            android:id="@+id/tvnum2"
+            android:layout_width="35dp"
+            android:layout_height="41dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.41"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:layout_constraintVertical_bias="1.0"
+            tools:text="10" />
+
+        <TextView
+            android:id="@+id/tvnum3"
+            android:layout_width="26dp"
+            android:layout_height="20dp"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/ivshare"
+            app:layout_constraintStart_toEndOf="@+id/ivLikes"
+            app:layout_constraintTop_toBottomOf="@+id/tvTweet"
+            app:layout_constraintVertical_bias="0.733"
+            tools:text="100" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
